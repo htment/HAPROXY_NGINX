@@ -205,7 +205,9 @@ systemctl reload haproxy
 ``` nano /etc/nginx/conf.d/example-http.conf` ``
 
 ![alt text](img/haproxy_ngnix.png)
-![aaa]](img/exzmple-http.cfg.png)
+![aaa](img/exzmple-http.cfg.png)
 ```systemctl reload nginx.service```
+Проверим без порта, как указано в конфиге
+`` curl  -H 'Host:example.com' http://127.0.0.1``
 ![alt text](img/test3.png)
 
