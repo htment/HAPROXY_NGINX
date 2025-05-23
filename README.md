@@ -190,7 +190,7 @@ systemctl reload haproxy
 ![alt text](img/haproxy_test.png)
 
 проверим с указанием хоста
-`` curl  -H 'Host:example.com' http://127.0.0.1:8088``
+`` curl  -H 'Host:example-http.com' http://127.0.0.1:8088``
 
 ![alt text](img/test2.png)
 
@@ -202,12 +202,13 @@ systemctl reload haproxy
 
 ## настроим nginx+haproxy
 поменяем секцию в файле 
-``` nano /etc/nginx/conf.d/example-http.conf` ``
+``` nano /etc/nginx/conf.d/example-http.conf```
 
 ![alt text](img/haproxy_ngnix.png)
 ![aaa](img/exzmple-http.cfg.png)
+
 ```systemctl reload nginx.service```
 Проверим без порта, как указано в конфиге
-`` curl  -H 'Host:example.com' http://127.0.0.1``
+`` curl  -H 'Host:example-http.com' http://127.0.0.1``
 ![alt text](img/test3.png)
 
