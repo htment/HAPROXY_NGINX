@@ -14,7 +14,7 @@ echo "SERVER 2:9999" > http2/index.html
 3. Запускаем простой web - сервер 
 ```
 cd http1
-python3 -m http.server 9999 --bind 0.0.0.0
+python3 -m http.server 8888 --bind 0.0.0.0
 
 # В дугом окне
 cd http2
